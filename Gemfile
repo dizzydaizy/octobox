@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.7.2'
 
-gem 'rails', '6.1.4.1'
+gem 'rails', '6.1.7.3'
 gem 'bootstrap', '>= 5.1.0'
 gem 'attr_encrypted'
 gem 'jquery-rails', '>= 4.4.0'
@@ -10,7 +10,7 @@ gem 'local_time'
 gem 'octicons_helper', '9.6.0'
 gem 'octokit', '>= 4.20.0'
 gem 'omniauth-github', '2.0.0'
-gem 'puma', '>= 5.3.1'
+gem 'puma', '>= 5.6.4'
 gem 'sassc-rails', '>= 2.1.2'
 gem 'turbolinks'
 gem 'typhoeus'
@@ -20,18 +20,18 @@ gem 'pg_search'
 gem 'jbuilder'
 gem 'rake', require: false
 gem 'rgb'
-gem 'sidekiq', '>= 6.2.1'
-gem 'sidekiq-unique-jobs', '6.0.25'
-gem 'sidekiq-scheduler', '>= 3.0.1', require: false
+gem 'sidekiq', '>= 7.0.0'
+gem 'sidekiq-unique-jobs', '7.0.13'
+gem 'sidekiq-scheduler', '>= 3.1.0', require: false
 gem 'rack-canonical-host', '>= 1.0.0'
-gem 'sidekiq-status', '>= 1.1.4'
+gem 'sidekiq-status', '>= 2.1.0'
 gem 'gemoji', require: false
 gem 'bootsnap', require: false
 gem 'bugsnag'
 gem 'jwt'
 gem 'oj'
 gem 'yard', require: false
-gem 'commonmarker'
+gem 'commonmarker', '>= 0.23.7'
 gem 'pg', '1.2.3'
 
 group :development, :test do
@@ -64,7 +64,7 @@ group :development do
 end
 
 group :production do
-  gem 'skylight', '~> 5.0.0.beta5'
+  gem 'skylight', '~> 5.0.0.0'
   gem 'lograge', '>= 0.11.2'
   gem 'puma_worker_killer', '>= 0.3.1'
 end
